@@ -1,0 +1,181 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Bona+Nova+SC:ital,wght@0,400;0,700;1,400&family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap');
+
+body{
+    margin: 0;
+    display:grid;
+    grid-template-columns: 310px 1fr;
+    grid-template-rows: 1fr 300px;
+    grid-template-areas: "page-header page-main" "page-header page-footer";
+    font-family: "EB Garamond", serif;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.page-header{
+    grid-area: page-header;
+    background-color: #E1CAAC;
+    font-family: "Bona Nova SC", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 24px;
+   }
+   .header-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100%;
+    height: 100vh;
+    position: sticky;
+    top:0;
+   }
+.page-main{
+    grid-area:  page-main;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 40px 0;
+}
+.page-main>*{
+    margin: 40px 0;
+    border-radius: 23px;
+}
+.page-footer{
+    grid-area: page-footer;
+    background-color: #352940;
+}
+.page-header nav{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 5%;
+    height:30vh;
+}
+.logo{
+    padding: 5%;
+    text-align: center;
+    vertical-align: middle;
+    margin-bottom: 5vh;
+    font-weight: 700;
+    font-size: 30px;
+}
+.header-link{
+    align-items: center;
+    display: flex;
+   
+}
+.header-link:nth-child(1)::before{
+     content:url(images/i_2.png);
+     width: 25px;
+     height:25px;
+     display: inline;
+}
+.header-link:nth-child(2)::before{
+    content:url(images/i_1.png);
+    width: 25px;
+    height:25px;
+    display: inline;
+}
+.header-link:nth-child(3)::before{
+    content:url(images/i_4.png);
+    width: 25px;
+    height:25px;
+    display: inline;
+}
+.header-link:nth-child(4)::before{
+    content:url(images/i_3.png);
+    width: 25px;
+    height:25px;
+    display: inline;
+}
+.logo_s{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #FEF6E3;
+    height: 500px;
+    width: 80%;
+    font-size: 128px;  
+}
+.banner{
+    height: calc(100% - 60px);
+    width: calc(100% - 60px);
+    background-image: url(images/banner_t.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+    color: white;
+    font-size: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.course_s{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #865A3D;
+    height: 500px;
+    width:  80%;
+    font-size: 128px;
+}
+.author_s{
+    display: flex;
+    align-items: center;
+    background-color: #FEF6E3;
+    min-height: 500px;
+    width: 80%;
+    font-size: 18px;
+}
+.author_s>.left{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    flex: 5;
+    padding: 0 20px;
+}
+.author_s>.right{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex: 5;
+
+}
+.author_s img{
+    width: 100%;
+    border-radius: 23px;
+    
+}
+.author_s h1{
+    font-family: "Bona Nova SC", serif;
+}
+.team_s{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #865A3D;
+    height: 500px;
+    width:  80%;
+    font-size: 128px;
+
+}
+.history_s{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #FEF6E3;
+    height: 500px;
+    width:  80%;
+    font-size: 128px;
+}
+
