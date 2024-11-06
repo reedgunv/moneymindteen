@@ -178,4 +178,11 @@ a{
     width:  80%;
     font-size: 128px;
 }
-
+.page-footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    color: white;
+    font-size: 15px;
+}
